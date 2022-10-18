@@ -86,18 +86,22 @@ class TabInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Click the picture to change.",
-            style: Theme.of(context)
-                .textTheme
-                .headline1
-                ?.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
-          ),
-          const Icon(Icons.arrow_upward_rounded)
-        ],
+      child: Card(
+        elevation: 20,
+        color: Colors.black12,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Click the picture to change.",
+              style: Theme.of(context)
+                  .textTheme
+                  .headline1
+                  ?.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+            ),
+            const Icon(Icons.arrow_upward_rounded)
+          ],
+        ),
       ),
     );
   }
