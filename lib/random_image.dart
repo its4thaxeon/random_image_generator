@@ -9,8 +9,8 @@ class RandomHeight100Image extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
         "https://picsum.photos/200/300?random=${numberGenerator(1)}",
-        height: 300,
-        fit: BoxFit.cover);
+        height: 400,
+        fit: BoxFit.fill);
   }
 }
 
