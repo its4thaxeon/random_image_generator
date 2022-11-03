@@ -7,13 +7,11 @@ class RandomHeight100Image extends StatelessWidget {
   final double height;
   @override
   Widget build(BuildContext context) {
-    return Image.network(
-        "https://picsum.photos/200/300?random=${numberGenerator(1)}",
-        height: 400,
-        fit: BoxFit.fill);
+    return InteractiveViewer(
+      child: Image.network(
+          "https://picsum.photos/200/300?random=${Random().nextInt(100000)}",
+          height: 400,
+          fit: BoxFit.fill),
+    );
   }
-}
-
-int numberGenerator(int number) {
-  return number += Random().nextInt(100000);
 }

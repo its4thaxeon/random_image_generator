@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import "random_image.dart";
 import "list_tile_learn.dart";
 
-class ListViewBuilderLearn1 extends StatefulWidget {
-  const ListViewBuilderLearn1({super.key});
+class MyListViewBuilderLearn extends StatefulWidget {
+  const MyListViewBuilderLearn({super.key});
 
   @override
-  State<ListViewBuilderLearn1> createState() => _ListViewBuilderLearn1State();
+  State<MyListViewBuilderLearn> createState() => _ListViewBuilderLearn1State();
 }
 
-class _ListViewBuilderLearn1State extends State<ListViewBuilderLearn1>
+class _ListViewBuilderLearn1State extends State<MyListViewBuilderLearn>
     with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
